@@ -1,0 +1,85 @@
+<head>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="semantic-ui/semantic.min.css">
+    <script type="text/javascript" src="semantic-ui/semantic.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script type="text/javascript" src="generator.js"></script>
+</head>
+
+<body>
+    <div class="ui center aligned fluid grid">
+        <div class="sixteen wide column">
+            <div class="ui basic segment"></div>
+        </div>
+
+        <div class="twelve wide column">
+            <h1 class="header">Workout Generator</h1>
+        </div>
+        
+        <div class="left aligned twelve wide column">
+            <form class="ui form">
+                <div class="five inline fields">
+
+                    <label>What types of exercises should be generated?</label>
+                    
+                    <div class="field">
+                        <div class="ui checkbox">
+                            <input type="checkbox" name="type" value="core">
+                            <label>Core</label>
+                        </div>
+                    </div>
+                    
+                    <div class="field">
+                        <div class="ui checkbox">
+                            <input type="checkbox" name="type" value="upper">
+                            <label>Upper Body</label>
+                        </div>
+                    </div>
+                    
+                    <div class="field">
+                        <div class="ui checkbox">
+                            <input type="checkbox" name="type" value="glutes">
+                            <label>Glutes</label>
+                        </div>
+                    </div>
+                    
+                    <div class="field">
+                        <div class="ui checkbox">
+                            <input type="checkbox" name="type" value="lower">
+                            <label>Lower Body</label>
+                        </div>
+                    </div>
+                    
+                    <div class="field">
+                        <div class="ui checkbox">
+                            <input type="checkbox" name="type" value="cardio">
+                            <label>Cardio</label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="center aligned sixteen wide column">
+            <button class="ui primary button" onclick="generateWorkout()">
+                Generate Workout
+            </button>
+        </div>
+
+        <div class="center aligned twelve wide column">
+            <table class="ui single line unstackable table" id="workout">
+                <thead>
+                    <tr>
+                      <th>Exercise</th>
+                      <th class="center aligned">Sets</th>
+                      <th class="center aligned">Reps</th>
+                      <th class="right aligned">Done?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</body>

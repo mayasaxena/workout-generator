@@ -1,0 +1,3 @@
+Stationary Lunge,3,20/leg
+Calf Raises,3,20
+Squat Kicks,3,20

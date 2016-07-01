@@ -1,0 +1,3 @@
+Crunches,3,20
+Supermans,3,20
+Oblique Crunches,3,20/side
